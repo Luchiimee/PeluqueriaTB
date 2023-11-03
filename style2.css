@@ -1,0 +1,58 @@
+/* tarjeta hover imagen*/ 
+
+
+
+
+.tarjeta1 {
+    position: relative;
+    max-width: 100%;
+    margin: 5px;
+    border-radius: 2px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 1s ease;
+  }
+  
+  .tarjeta1 .img-contendor{
+    position: relative;
+  }
+  
+  .tarjeta1 .img-fondo   {
+    width: 100%;
+  }
+  
+  .tarjeta1 .hover-img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+    border-radius: 20px;
+    padding: 5px;
+  }
+  
+  .tarjeta1:hover .hover-img {
+    opacity: 1;
+  }
+  
+  .tarjeta1:hover .img-fondo {
+    opacity: 0;
+  }
+.tarjeta1 .texto-hover{
+  position: absolute;
+  top: 400px;
+  left: 0px;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  transition: opacity 1s;
+  color: aliceblue;
+  width: 100%;
+}
+.tarjeta1:hover  .texto-hover{
+  opacity: 1;
+}
+.tarjeta1:hover .texto{
+  opacity: 0;
+}

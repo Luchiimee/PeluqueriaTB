@@ -1,0 +1,95 @@
+/* Establece un alto mínimo para el contenedor parallax */
+
+.parallax-container {
+    min-height: 100%;
+    display: flex;
+    align-items:center;
+    overflow: hidden;
+    position: relative;
+    background-color:rgb(253, 164, 213);
+    margin: 10px ;
+   
+  }
+  
+  /* Ajusta el estilo de la imagen de fondo */
+ /* CSS para la imagen de parallax */
+.imagenturno {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    transition: transform 0.9s;
+  
+  }
+  
+  
+  /* Añade un efecto de desplazamiento en hover */
+ 
+  
+  /* Estilo del texto en parallax */ /* para pantalla grande*/
+  @media (min-width: 768px) {
+  .parallax-text {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    color: #fff;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 30px;
+  } 
+}
+  /* Estilos para pantallas más pequeñas (ejemplo: menos de 768px) */
+
+@media (max-width: 767px) {
+  
+    .parallax-container {
+        min-height: auto;
+        margin:10px 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        border-radius: 20px;
+        padding: 10px;
+        background-color:rgb(253, 164, 213);;
+        transform: none;
+        
+    }
+   .imagenturno{
+    display: none;
+   }
+    .parallax-text {
+        position: relative;
+        font-size: 20px;
+        top: auto;
+        left:auto;
+        
+        transform: none;
+        color:aliceblue;
+        text-align: center; /* Alinea el texto al centro horizontalmente */
+        margin: auto; /* Establece un margen superior (puedes ajustarlo según tus necesidades) */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        align-items: stretch;
+        margin: 0 auto;
+        
+        
+    }
+    p h2 {
+        margin: 10px 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+    body, main {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
